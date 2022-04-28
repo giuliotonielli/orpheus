@@ -14,14 +14,14 @@
   font-size: 1.2rem;
   position: sticky;
   top: 0;
-  z-z_index: 999;
+  z-index: 999;
 }
 
 .navbar__container {
   display: flex;
   justify-content: space-between;
   height: 80px;
-  z-z_index: 1;
+  z-index: 1;
   width: 100%;
   max-width: 1300px;
   margin-right: auto;
@@ -108,7 +108,7 @@
     display: flex;
     justify-content: space-between;
     height: 80px;
-    z-z_index: 1;
+    z-index: 1;
     width: 100%;
     max-width: 1300px;
     padding: 0;
@@ -124,7 +124,7 @@
     opacity: 1;
     transition: all 0.5s ease;
     height: 50vh;
-    z-z_index: -1;
+    z-index: -1;
   }
 
   .navbar__menu.active {
@@ -132,7 +132,7 @@
     top: 100%;
     opacity: 1;
     transition: all 0.5s ease;
-    z-z_index: 99;
+    z-index: 99;
     height: 50vh;
     font-size: 1.6rem;
   }
@@ -147,6 +147,26 @@
     margin: 5px auto;
     transition: all 0.3s ease-in-out;
     background: #fff;
+    display: block;
+    cursor: pointer;
+  }
+
+  .navbar__toggle .toggle_button {
+    background: #131313;
+    border-color: #131313;
+  }
+
+  .navbar__toggle .navbar__list {
+    transform: scaleY(0);
+    transition: 0.3s;
+  }
+
+  .navbar__toggle .navbar__links {
+    transition: 0.3s;
+  }
+
+  .newlist {
+    transform: scaleY(1);
   }
 
   .navbar__item {
@@ -180,11 +200,6 @@
     transform: translate(5%, 20%);
   }
 
-  .navbar__toggle .bar {
-    display: block;
-    cursor: pointer;
-  }
-
   #mobile-menu.is-active .bar:nth-child(2) {
     opacity: 0;
   }
@@ -212,7 +227,7 @@
   margin: 0 auto;
   height: 90vh; 
   background-color: #131313;
-  z-z_index: 1;
+  z-index: 1;
   width: 100%;
   max-width: 1300px;
   padding-right: 50px;
@@ -237,7 +252,7 @@
   margin: 0 auto;
   height: 110vh;
   background-color: #131313;
-  z-z_index: 1;
+  z-index: 1;
   max-width: 1300px;
   padding-right: 50px;
   padding-left: 50px;
@@ -343,7 +358,7 @@
 
 .main__btn a {
   position: relative;
-  z-z_index: 2;
+  z-index: 2;
   color: #fff;
   text-decoration: none;
 }
@@ -387,7 +402,7 @@
 
 .main__btn2 a {
   position: relative;
-  z-z_index: 2;
+  z-index: 2;
   color: #fff;
   text-decoration: none;
 }
@@ -801,7 +816,7 @@
   display: flex;
   justify-content: space-between;
   height: 80px;
-  z-z_index: 1;
+  z-index: 1;
   width: 100%;
   max-width: 1300px;
   margin-right: auto;
